@@ -1,0 +1,46 @@
+body {
+  background-color: #faf9f6;
+  color: #0f172a;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.custom-shadow,
+.soft-shadow {
+  box-shadow: 0 4px 20px -5px rgba(46, 0, 82, 0.08);
+}
+
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px -5px rgba(46, 0, 82, 0.12);
+}
+
+.shadow-ambient {
+  box-shadow: 0 10px 20px -5px rgba(46, 0, 82, 0.08);
+}
+
+.ambient-shadow {
+  box-shadow: 0 20px 40px -5px rgba(46, 0, 82, 0.08);
+}
+
+.ambient-shadow-hover:hover,
+.interactive-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 48px -8px rgba(46, 0, 82, 0.12);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.interactive-card {
+  transition: all 0.2s ease-in-out;
+}
