@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_standard" name="shell-type"/>
+<title>Test Vocacional • Orientación en Ciencias Sociales</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; scroll-behavior: smooth; }
+      body { overscroll-behavior: none; }
+    }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #f0eee9; }
+    ::-webkit-scrollbar-thumb { background: #aecebf; border-radius: 9999px; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "error": "#ba1a1a",
+            "surface-tint": "#476458",
+            "primary-fixed-dim": "#aecebf",
+            "tertiary-container": "#a96046",
+            "primary": "#446155",
+            "secondary-fixed": "#cde5fc",
+            "surface": "#fbf9f4",
+            "primary-container": "#5c7a6d",
+            "on-secondary-container": "#50677a",
+            "surface-container-lowest": "#ffffff",
+            "on-error": "#ffffff",
+            "secondary-container": "#cde5fc",
+            "inverse-on-surface": "#f2f1ec",
+            "inverse-surface": "#30312e",
+            "outline": "#727974",
+            "on-primary-fixed": "#022017",
+            "outline-variant": "#c1c8c3",
+            "secondary-fixed-dim": "#b1c9df",
+            "surface-container": "#f0eee9",
+            "on-tertiary": "#ffffff",
+            "surface-variant": "#e4e2dd",
+            "on-secondary-fixed": "#031e2e",
+            "tertiary-fixed": "#ffdbcf",
+            "surface-container-low": "#f5f3ee",
+            "on-surface-variant": "#424845",
+            "on-surface": "#1b1c19",
+            "secondary": "#4a6174",
+            "tertiary": "#8b4830",
+            "on-background": "#1b1c19",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#eefff5",
+            "primary-fixed": "#c9eada",
+            "on-tertiary-container": "#fff9f8",
+            "tertiary-fixed-dim": "#ffb59c",
+            "surface-container-highest": "#e4e2dd",
+            "on-primary-fixed-variant": "#304c41",
+            "on-secondary": "#ffffff",
+            "on-tertiary-fixed": "#380c00",
+            "inverse-primary": "#aecebf",
+            "surface-container-high": "#eae8e3",
+            "surface-dim": "#dbdad5",
+            "background": "#fbf9f4",
+            "on-tertiary-fixed-variant": "#72351e",
+            "on-secondary-fixed-variant": "#32495b",
+            "surface-bright": "#fbf9f4",
+            "on-error-container": "#93000a",
+            "error-container": "#ffdad6"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "gutter-desktop": "2rem",
+            "space-sm": "0.5rem",
+            "margin": "1rem",
+            "space-xs": "0.25rem",
+            "space-md": "1rem",
+            "margin-tablet": "2rem",
+            "space-lg": "1.5rem",
+            "margin-desktop": "3.5rem",
+            "space-xl": "2.5rem",
+            "space-xxl": "4rem",
+            "gutter": "1.25rem"
+          },
+          fontFamily: {
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Newsreader"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Newsreader"],
+            "display-lg-mobile": ["Newsreader"],
+            "headline-md": ["Newsreader"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Newsreader"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "display-lg": ["Newsreader"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"]
+          },
+          fontSize: {
+            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+            "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+            "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+            "headline-lg-mobile": ["26px", {"lineHeight": "34px", "fontWeight": "500"}],
+            "display-lg-mobile": ["36px", {"lineHeight": "44px", "fontWeight": "400"}],
+            "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+            "label-sm": ["11px", {"lineHeight": "14px", "fontWeight": "500"}],
+            "label-lg": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+            "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+            "title-lg": ["18px", {"lineHeight": "26px", "fontWeight": "600"}],
+            "display-lg": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
+            "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+            "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col justify-between selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Header Superior Fijo -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/95 backdrop-blur-md border-b border-surface-container-high shadow-xs transition-all">
+<div class="max-w-[1340px] mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-on-primary shadow-xs">
+<span class="material-symbols-outlined text-[22px]">psychology_alt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Test Vocacional</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-0.5 font-medium">Orientación en Ciencias Sociales</span>
+</div>
+</div>
+<!-- Barra de navegación y pestañas rápidas de visualización -->
+<div class="flex items-center gap-2 sm:gap-3">
+<div class="hidden md:flex items-center bg-surface-container rounded-xl p-1 text-label-sm">
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1 font-medium cursor-pointer" id="nav-tab-intro" type="button">
+<span class="material-symbols-outlined text-[16px]">home</span>
+<span>Inicio</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-semibold shadow-xs transition-all flex items-center gap-1 cursor-pointer" id="nav-tab-quiz" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Test &amp; Gráficos en Vivo</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1 font-medium cursor-pointer" id="nav-tab-results" type="button">
+<span class="material-symbols-outlined text-[16px]">analytics</span>
+<span>Dictamen Final</span>
+</button>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span id="header-answered-badge">6 / 12 Respondidas</span>
+</div>
+<button class="p-2 text-on-surface-variant hover:text-on-surface rounded-xl hover:bg-surface-container transition-colors cursor-pointer" id="nav-info-btn" title="Información del test" type="button">
+<span class="material-symbols-outlined text-[22px]">help_outline</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Contenedor Principal -->
+<main class="w-full pt-20 md:pt-24 flex-grow bg-surface">
+<div class="max-w-[1340px] mx-auto px-4 md:px-6 py-6 md:py-8">
+<!-- BANNER SUPERIOR CONTEXTUAL: PANTALLA DE BIENVENIDA DESPLEGABLE / COLAPSABLE -->
+<section class="mb-8 bg-surface-container-low rounded-3xl p-6 md:p-8 border border-surface-container-high relative overflow-hidden transition-all duration-300" id="banner-welcome">
+<div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-primary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-16 -bottom-16 w-64 h-64 rounded-full bg-secondary-container/40 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="max-w-2xl text-center md:text-left">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm font-medium mb-3">
+<span class="material-symbols-outlined text-[15px]">explore</span>
+              Autoevaluación Vocacional Secundaria
+            </div>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-headline-lg text-on-surface tracking-tight leading-tight mb-2">
+              ¿Ciencias Sociales es tu orientación?
+            </h1>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+              Respondé 12 preguntas directas sobre tus intereses, curiosidades y formas de pensar. A medida que elegís cada opción, el panel analítico calcula tus gráficos vocacionales en tiempo real.
+            </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-3 shrink-0">
+<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-outline-variant bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md transition-all cursor-pointer text-sm shadow-xs" id="btn-quick-fill" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">magic_button</span>
+<span>Cargar Ejemplo de Alumno</span>
+</button>
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md font-semibold transition-all shadow-xs cursor-pointer text-sm" id="btn-scroll-to-test" type="button">
+<span>Hacer el Test Ahora</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- VISTA INTEGRAL 2 COLUMNAS: TEST INTERACTIVO (IZQUIERDA) + PANEL DE MÉTRICAS EN VIVO & GRÁFICOS (DERECHA) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<!-- COLUMNA IZQUIERDA: TARJETA INTERACTIVA DE PREGUNTAS (5 o 6 COLS) -->
+<section class="lg:col-span-6 flex flex-col space-y-4" id="section-quiz-card">
+<!-- Encabezado de Pregunta con Progreso Activo -->
+<div class="bg-surface-container-lowest border border-surface-container rounded-2xl p-5 shadow-xs">
+<div class="flex items-center justify-between gap-3 mb-2.5">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm font-semibold text-xs" id="quiz-category-badge">
+                  Comportamiento humano
+                </span>
+<span class="text-outline-variant text-xs">•</span>
+<span class="font-label-md text-xs font-semibold text-on-surface" id="quiz-counter">
+                  Pregunta 1 de 12
+                </span>
+</div>
+<div class="flex items-center gap-1.5 font-label-md text-xs text-primary font-bold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span id="quiz-percentage">50% completado</span>
+</div>
+</div>
+<!-- Barra de Avance -->
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary transition-all duration-300 ease-out rounded-full" id="progress-bar-fill" style="width: 50%;"></div>
+</div>
+<!-- Navegación de bolitas de las 12 preguntas para saltar directamente -->
+<div class="flex items-center justify-between gap-1 mt-4 pt-3 border-t border-surface-container overflow-x-auto py-1" id="question-pills-container">
+<!-- Inyectado por JS (12 pastillas) -->
+</div>
+</div>
+<!-- Tarjeta de la Pregunta Actual y Opciones -->
+<div class="bg-surface-container-lowest border border-surface-container rounded-2xl p-6 md:p-7 shadow-xs flex flex-col justify-between min-h-[440px] relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-fixed/20 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between gap-2 text-primary font-label-md text-xs mb-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+<span id="question-axis-label">Eje: Sociedad e Instituciones</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-mono text-[11px]" id="live-point-badge">
+                  Puntaje actual de resp: +2
+                </span>
+</div>
+<h2 class="font-headline-lg text-headline-sm md:text-headline-md text-on-surface tracking-tight mt-1 mb-6 leading-snug" id="question-text">
+                ¿Te interesa entender por qué las personas actúan de determinada manera?
+              </h2>
+<!-- Opciones A, B, C -->
+<div aria-label="Opciones de respuesta" class="space-y-3" id="options-container" role="radiogroup">
+<!-- Opción A -->
+<button class="option-btn group w-full text-left p-4 rounded-xl border transition-all flex items-center justify-between cursor-pointer bg-surface-container-low hover:bg-surface-container border-transparent" data-val="2" type="button">
+<div class="flex items-center gap-3.5">
+<div class="option-indicator w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant font-label-md font-bold group-hover:bg-primary-container group-hover:text-on-primary transition-colors shrink-0">
+                      A
+                    </div>
+<div>
+<span class="font-title-lg text-sm md:text-base font-semibold text-on-surface block">Mucho / Sí</span>
+<span class="font-body-sm text-xs text-on-surface-variant">Siento gran afinidad e interés por este tema (+2 pts).</span>
+</div>
+</div>
+<div class="option-check opacity-0 transition-opacity">
+<span class="material-symbols-outlined text-primary text-[24px]">check_circle</span>
+</div>
+</button>
+<!-- Opción B -->
+<button class="option-btn group w-full text-left p-4 rounded-xl border transition-all flex items-center justify-between cursor-pointer bg-surface-container-low hover:bg-surface-container border-transparent" data-val="1" type="button">
+<div class="flex items-center gap-3.5">
+<div class="option-indicator w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant font-label-md font-bold group-hover:bg-primary-container group-hover:text-on-primary transition-colors shrink-0">
+                      B
+                    </div>
+<div>
+<span class="font-title-lg text-sm md:text-base font-semibold text-on-surface block">A veces / Quizás / Depende</span>
+<span class="font-body-sm text-xs text-on-surface-variant">Me llama la atención en ciertas situaciones (+1 pto).</span>
+</div>
+</div>
+<div class="option-check opacity-0 transition-opacity">
+<span class="material-symbols-outlined text-secondary text-[24px]">check_circle</span>
+</div>
+</button>
+<!-- Opción C -->
+<button class="option-btn group w-full text-left p-4 rounded-xl border transition-all flex items-center justify-between cursor-pointer bg-surface-container-low hover:bg-surface-container border-transparent" data-val="0" type="button">
+<div class="flex items-center gap-3.5">
+<div class="option-indicator w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant font-label-md font-bold group-hover:bg-primary-container group-hover:text-on-primary transition-colors shrink-0">
+                      C
+                    </div>
+<div>
+<span class="font-title-lg text-sm md:text-base font-semibold text-on-surface block">No demasiado / No</span>
+<span class="font-body-sm text-xs text-on-surface-variant">No suele captar mi preferencia personal (0 pts).</span>
+</div>
+</div>
+<div class="option-check opacity-0 transition-opacity">
+<span class="material-symbols-outlined text-outline text-[24px]">check_circle</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Botones de Navegación del Test -->
+<div class="pt-5 flex items-center justify-between gap-3 mt-6 border-t border-surface-container">
+<button class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-sm transition-colors cursor-pointer disabled:opacity-30 disabled:pointer-events-none" id="btn-prev-question" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Anterior</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl border border-surface-container hover:bg-surface-container-low text-xs font-medium text-on-surface-variant cursor-pointer transition-all" id="btn-reset-current" title="Desmarcar esta pregunta" type="button">
+<span class="material-symbols-outlined text-[16px]">undo</span>
+<span class="hidden sm:inline">Desmarcar</span>
+</button>
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-sm font-semibold shadow-xs transition-all active:scale-[0.99] cursor-pointer" id="btn-next-question" type="button">
+<span id="btn-next-text">Siguiente</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Resumen de estado en vivo para orientadores / alumnos -->
+<div class="bg-surface-container-low rounded-2xl p-4 border border-surface-container flex items-center justify-between text-xs text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary inline-block"></span>
+              Puntaje Acumulado en Vivo: <strong class="text-on-surface font-semibold" id="live-total-score-badge">14 / 24 pts</strong>
+</span>
+<button class="text-primary font-semibold hover:underline flex items-center gap-1 cursor-pointer" id="btn-jump-results">
+<span>Ir a Dictamen</span>
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span>
+</button>
+</div>
+</section>
+<!-- COLUMNA DERECHA: PANEL DE MÉTRICAS EN VIVO & GRÁFICOS ANALÍTICOS (6 COLS) -->
+<section class="lg:col-span-6 flex flex-col space-y-4" id="section-analytics-panel">
+<div class="bg-surface-container-lowest border border-surface-container rounded-2xl p-5 md:p-6 shadow-xs">
+<!-- Título del Panel -->
+<div class="flex items-center justify-between pb-3 border-b border-surface-container mb-4">
+<div>
+<span class="font-label-sm text-xs font-semibold text-secondary uppercase tracking-wider block">Panel Analítico en Tiempo Real</span>
+<h3 class="font-headline-sm text-lg md:text-xl text-on-surface font-semibold">Métricas Vocacionales</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-xs font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+                En vivo
+              </span>
+</div>
+<!-- Gráfico 1: Velocímetro / Gauge Proyectado y Donut de Respuestas -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
+<!-- Velocímetro Semicircular SVG -->
+<div class="bg-surface-container-low p-4 rounded-xl border border-surface-container flex flex-col items-center text-center">
+<span class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider mb-1">Afinidad Proyectada</span>
+<div class="relative w-40 h-24 flex items-end justify-center overflow-hidden my-1">
+<svg class="w-40 h-40 transform -rotate-180" viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#eae8e3" stroke-dasharray="125.66 251.32" stroke-linecap="round" stroke-width="12"></circle>
+<circle class="transition-all duration-700 ease-out" cx="50" cy="50" fill="transparent" id="gauge-meter-path" r="40" stroke="#446155" stroke-dasharray="0 251.32" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<div class="absolute bottom-1 flex flex-col items-center">
+<span class="text-2xl font-bold font-headline-sm text-on-surface" id="gauge-score-value">14 <span class="text-xs font-normal text-on-surface-variant">/ 24</span></span>
+<span class="text-[11px] font-semibold text-primary" id="gauge-affinity-label">Afinidad Moderada</span>
+</div>
+</div>
+<div class="w-full mt-2 pt-2 border-t border-surface-container flex justify-between text-[11px] text-on-surface-variant">
+<span>0 pts (Baja)</span>
+<span id="gauge-percent-label">58% afinidad</span>
+<span>24 pts (Alta)</span>
+</div>
+</div>
+<!-- Gráfico Donut de Distribución de Opciones (Mucho, A veces, No) -->
+<div class="bg-surface-container-low p-4 rounded-xl border border-surface-container flex flex-col justify-between">
+<span class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider mb-2">Distribución de Opciones</span>
+<div class="flex items-center gap-3">
+<!-- Donut SVG -->
+<div class="relative w-24 h-24 shrink-0">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#eae8e3" stroke-width="16"></circle>
+<circle class="transition-all duration-500" cx="50" cy="50" fill="transparent" id="donut-slice-a" r="40" stroke="#446155" stroke-dasharray="0 251.32" stroke-dashoffset="0" stroke-width="16"></circle>
+<circle class="transition-all duration-500" cx="50" cy="50" fill="transparent" id="donut-slice-b" r="40" stroke="#4a6174" stroke-dasharray="0 251.32" stroke-dashoffset="0" stroke-width="16"></circle>
+<circle class="transition-all duration-500" cx="50" cy="50" fill="transparent" id="donut-slice-c" r="40" stroke="#c1c8c3" stroke-dasharray="0 251.32" stroke-dashoffset="0" stroke-width="16"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<span class="text-sm font-bold text-on-surface" id="donut-answered-count">12</span>
+<span class="text-[9px] text-on-surface-variant uppercase">Resp.</span>
+</div>
+</div>
+<!-- Leyenda interactiva -->
+<div class="flex-grow space-y-1.5 text-xs">
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="w-2.5 h-2.5 rounded-full bg-primary inline-block"></span>
+                        A (Mucho):
+                      </span>
+<strong class="font-semibold text-on-surface" id="stat-a-label">5 (42%)</strong>
+</div>
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary inline-block"></span>
+                        B (A veces):
+                      </span>
+<strong class="font-semibold text-on-surface" id="stat-b-label">4 (33%)</strong>
+</div>
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="w-2.5 h-2.5 rounded-full bg-outline-variant inline-block"></span>
+                        C (No):
+                      </span>
+<strong class="font-semibold text-on-surface" id="stat-c-label">3 (25%)</strong>
+</div>
+</div>
+</div>
+<div class="text-[10px] text-on-surface-variant text-right mt-1 pt-1 border-t border-surface-container">
+                  Actualizado en cada respuesta
+                </div>
+</div>
+</div>
+<!-- Gráfico 2: Barras Analíticas de las 4 Dimensiones o Ejes Temáticos -->
+<div class="mt-5 pt-4 border-t border-surface-container">
+<div class="flex items-center justify-between mb-3">
+<span class="text-xs font-semibold text-on-surface uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">bar_chart</span>
+                  Desglose por 4 Dimensiones Temáticas
+                </span>
+<span class="text-[11px] text-on-surface-variant">Base sobre puntaje máximo de cada eje</span>
+</div>
+<div class="space-y-3.5">
+<!-- Eje 1: Sociedad e Instituciones (preguntas 1, 4, 11) -->
+<div class="bg-surface-container-low p-2.5 rounded-xl border border-surface-container">
+<div class="flex justify-between items-center text-xs mb-1">
+<span class="font-medium text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary">groups</span>
+                      1. Sociedad e Instituciones <span class="text-on-surface-variant text-[11px]">(Preg. 1, 4, 11)</span>
+</span>
+<span class="font-bold text-primary font-mono text-xs" id="dim-score-1">67% (4/6 pts)</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500" id="dim-bar-1" style="width: 67%;"></div>
+</div>
+</div>
+<!-- Eje 2: Pensamiento Crítico & Medios (preguntas 6, 9, 12) -->
+<div class="bg-surface-container-low p-2.5 rounded-xl border border-surface-container">
+<div class="flex justify-between items-center text-xs mb-1">
+<span class="font-medium text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">newspaper</span>
+                      2. Pensamiento Crítico &amp; Medios <span class="text-on-surface-variant text-[11px]">(Preg. 6, 9, 12)</span>
+</span>
+<span class="font-bold text-secondary font-mono text-xs" id="dim-score-2">50% (3/6 pts)</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full transition-all duration-500" id="dim-bar-2" style="width: 50%;"></div>
+</div>
+</div>
+<!-- Eje 3: Debate & Expresión Oral (preguntas 2, 8, 10) -->
+<div class="bg-surface-container-low p-2.5 rounded-xl border border-surface-container">
+<div class="flex justify-between items-center text-xs mb-1">
+<span class="font-medium text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary-container">record_voice_over</span>
+                      3. Debate &amp; Expresión Oral <span class="text-on-surface-variant text-[11px]">(Preg. 2, 8, 10)</span>
+</span>
+<span class="font-bold text-primary-container font-mono text-xs" id="dim-score-3">67% (4/6 pts)</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full transition-all duration-500" id="dim-bar-3" style="width: 67%;"></div>
+</div>
+</div>
+<!-- Eje 4: Curiosidad Histórica y Cultural (preguntas 3, 5, 7) -->
+<div class="bg-surface-container-low p-2.5 rounded-xl border border-surface-container">
+<div class="flex justify-between items-center text-xs mb-1">
+<span class="font-medium text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-tertiary">history_edu</span>
+                      4. Curiosidad Histórica y Cultural <span class="text-on-surface-variant text-[11px]">(Preg. 3, 5, 7)</span>
+</span>
+<span class="font-bold text-tertiary font-mono text-xs" id="dim-score-4">50% (3/6 pts)</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full transition-all duration-500" id="dim-bar-4" style="width: 50%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Accesos rápidos en el panel analítico -->
+<div class="mt-4 pt-3 flex flex-wrap items-center justify-between gap-2 text-xs">
+<span class="text-on-surface-variant">Cada respuesta "Mucho" (+2), "A veces" (+1), "No" (0).</span>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-semibold transition-colors cursor-pointer" id="btn-show-full-report" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">visibility</span>
+<span>Ver Informe Completo</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+<!-- SECCIÓN INTEGRAL DE RESULTADOS FINALES Y COMPARATIVA ACADÉMICA -->
+<section class="mt-10 space-y-6 pt-6 border-t border-surface-container" id="section-final-report">
+<!-- Tarjeta Principal del Dictamen Final -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 md:p-8 border border-surface-container shadow-sm relative overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Gauge Grande Final -->
+<div class="lg:col-span-5 flex flex-col items-center text-center p-6 bg-surface-container-low rounded-2xl border border-surface-container">
+<span class="font-label-md text-xs font-bold text-secondary uppercase tracking-widest mb-1">
+                Puntaje Consolidado Obtenido
+              </span>
+<!-- Radial Progress Grande -->
+<div class="relative w-48 h-48 flex items-center justify-center my-2">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 120 120">
+<circle class="stroke-surface-container" cx="60" cy="60" fill="transparent" r="50" stroke-width="10"></circle>
+<circle class="stroke-primary transition-all duration-1000 ease-out" cx="60" cy="60" fill="transparent" id="final-radial-circle" r="50" stroke-dasharray="314.159" stroke-dashoffset="131" stroke-linecap="round" stroke-width="10"></circle>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="font-display-lg text-4xl md:text-5xl text-on-surface font-bold leading-none" id="final-score-number">14</span>
+<span class="font-label-sm text-xs text-on-surface-variant mt-1">de 24 puntos</span>
+</div>
+</div>
+<!-- Pill de Afinidad -->
+<div class="mt-1 px-4 py-1.5 rounded-full font-label-md text-sm font-semibold shadow-xs" id="final-affinity-pill">
+                ¡Quizás Sociales sea una buena opción!
+              </div>
+<p class="font-body-sm text-xs text-on-surface-variant mt-2" id="final-percentage-sub">
+                Equivalente al 58% de coincidencia con el plan de estudios.
+              </p>
+</div>
+<!-- Veredicto Pedagógico Detallado -->
+<div class="lg:col-span-7 space-y-4">
+<div class="inline-flex items-center gap-1.5 text-primary font-label-sm text-xs uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-[18px]">school</span>
+<span>Dictamen Vocacional de Orientación</span>
+</div>
+<h2 class="font-display-lg text-headline-md md:text-headline-lg text-on-surface tracking-tight leading-tight" id="final-verdict-title">
+                ¡Quizás Sociales sea una buena opción!
+              </h2>
+<p class="font-body-lg text-body-md md:text-body-lg text-on-surface-variant leading-relaxed" id="final-verdict-description">
+                Tus respuestas muestran interés en las dinámicas humanas y la vida comunitaria, combinadas con curiosidad por otras disciplinas. Es una base muy positiva para explorar tanto las Ciencias Sociales como orientaciones afines.
+              </p>
+<!-- Competencias observadas -->
+<div>
+<span class="font-label-sm text-xs text-on-surface uppercase tracking-wider block mb-2 font-bold">
+                  Competencias vocacionales detectadas en tu perfil:
+                </span>
+<div class="flex flex-wrap gap-2" id="final-badges-container">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container font-label-sm text-xs font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-primary">done</span>Sensibilidad social
+                  </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container font-label-sm text-xs font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-primary">done</span>Pensamiento reflexivo
+                  </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container font-label-sm text-xs font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-primary">done</span>Apertura al intercambio
+                  </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container font-label-sm text-xs font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-primary">done</span>Curiosidad ciudadana
+                  </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Mensaje Motivador OBLIGATORIO Verbatim -->
+<div class="bg-surface-container-low border border-surface-container-high rounded-2xl p-6 md:p-7 flex flex-col sm:flex-row items-start sm:items-center gap-4 shadow-xs">
+<div class="w-12 h-12 rounded-xl bg-tertiary text-on-tertiary flex items-center justify-center shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[26px]">favorite</span>
+</div>
+<div class="space-y-1">
+<h4 class="font-title-lg text-base md:text-lg text-on-surface font-semibold">Un recordatorio importante para tu futuro</h4>
+<p class="font-body-md text-on-surface-variant leading-relaxed italic text-sm md:text-base">
+              «Este test es orientativo y no determina tu futuro. Elegir una orientación es una decisión personal. Lo importante es descubrir qué te interesa, qué te apasiona y qué querés aprender.»
+            </p>
+</div>
+</div>
+<!-- Comparativa Resumida: Ciencias Sociales vs. Economía y Administración -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 md:p-8 border border-surface-container shadow-xs">
+<div class="max-w-3xl mb-6">
+<span class="font-label-sm text-xs font-bold text-secondary uppercase tracking-wider block mb-1">Guía Vocacional Comparativa</span>
+<h3 class="font-headline-sm text-xl md:text-2xl text-on-surface font-semibold">Ciencias Sociales vs. Economía &amp; Gestión</h3>
+<p class="font-body-sm text-on-surface-variant mt-1">Compará las materias clave, el enfoque pedagógico y las carreras vinculadas para tomar la mejor decisión para tu Ciclo Superior.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Tarjeta Ciencias Sociales -->
+<div class="p-6 rounded-2xl bg-surface-container-low border-2 border-primary/40 relative">
+<div class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-xs font-bold mb-3">
+<span class="material-symbols-outlined text-[15px]">school</span>
+                Orientación Ciencias Sociales
+              </div>
+<h4 class="font-title-lg text-lg font-bold text-on-surface mb-2">Enfoque Cualitativo, Crítico y Humano</h4>
+<p class="font-body-sm text-on-surface-variant mb-4">Centrado en comprender a las personas, las comunidades, la historia viva, la cultura, la comunicación y los derechos humanos.</p>
+<div class="space-y-3 text-xs">
+<div>
+<strong class="text-on-surface block mb-1">Materias representativas:</strong>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-1 bg-surface-container rounded-md">Sociología</span>
+<span class="px-2 py-1 bg-surface-container rounded-md">Historia Contemporánea</span>
+<span class="px-2 py-1 bg-surface-container rounded-md">Comunicación y Medios</span>
+<span class="px-2 py-1 bg-surface-container rounded-md">Filosofía</span>
+<span class="px-2 py-1 bg-surface-container rounded-md">Ciencia Política</span>
+</div>
+</div>
+<div>
+<strong class="text-on-surface block mb-1">Campos y carreras vinculadas:</strong>
+<p class="text-on-surface-variant">Derecho, Periodismo, Sociología, Psicología, Trabajo Social, Historia, Relaciones Internacionales, Publicidad, Educación.</p>
+</div>
+</div>
+</div>
+<!-- Tarjeta Economía y Administración -->
+<div class="p-6 rounded-2xl bg-surface-container-low border border-surface-container relative">
+<div class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-xs font-bold mb-3">
+<span class="material-symbols-outlined text-[15px]">trending_up</span>
+                Orientación Economía &amp; Administración
+              </div>
+<h4 class="font-title-lg text-lg font-bold text-on-surface mb-2">Enfoque Cuantitativo, Financiero y Organizacional</h4>
+<p class="font-body-sm text-on-surface-variant mb-4">Centrado en la administración de recursos, mercados, contabilidad, emprendimientos, micro y macroeconomía.</p>
+<div class="space-y-3 text-xs">
+<div>
+<strong class="text-on-surface block mb-1">Materias representativas:</strong>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-1 bg-surface-container rounded-md">Sistemas de Información Contable</span>
+<span class="px-2 py-1 bg-surface-container rounded-md">Economía Política</span>
+<span class="px-2 py-1 bg-surface-container rounded-md">Administración</span>
+<span class="px-2 py-1 bg-surface-container rounded-md">Matemática Financiera</span>
+<span class="px-2 py-1 bg-surface-container rounded-md">Derecho Comercial</span>
+</div>
+</div>
+<div>
+<strong class="text-on-surface block mb-1">Campos y carreras vinculadas:</strong>
+<p class="text-on-surface-variant">Administración de Empresas, Contador Público, Economía, Finanzas, Comercio Exterior, Marketing Digital, Logística.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Desglose de las 12 Respuestas (Acordeón Detallado) -->
+<div class="bg-surface-container-lowest rounded-2xl border border-surface-container p-4 md:p-6 shadow-xs">
+<button class="w-full flex items-center justify-between p-2 rounded-xl text-left hover:bg-surface-container-low transition-colors cursor-pointer" id="btn-toggle-answers" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[24px]">checklist</span>
+<div>
+<span class="font-title-lg text-base md:text-lg font-semibold text-on-surface block">Revisar respuestas de las 12 preguntas</span>
+<span class="text-xs text-on-surface-variant">Hacé clic para ver o modificar cualquier respuesta puntual</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[24px] transition-transform" id="answers-toggle-icon">expand_more</span>
+</button>
+<div class="hidden pt-4 border-t border-surface-container mt-3" id="detailed-answers-table">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs" id="answers-list-container">
+<!-- Se inyecta con JS -->
+</div>
+</div>
+</div>
+<!-- Botones de Acción Final -->
+<div class="p-6 bg-surface-container-low rounded-3xl border border-surface-container flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="space-y-1 text-center sm:text-left">
+<h4 class="font-title-lg text-base font-semibold text-on-surface">¿Deseás reiniciar o compartir tu diagnóstico?</h4>
+<p class="font-body-sm text-xs text-on-surface-variant">Podés probar nuevas respuestas o copiar la síntesis completa para conversar con tus profesores o tutores.</p>
+</div>
+<div class="flex items-center gap-2.5 w-full sm:w-auto justify-center">
+<button class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-xs font-semibold transition-colors cursor-pointer" id="btn-copy-result" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span id="copy-btn-text">Copiar Síntesis</span>
+</button>
+<button class="inline-flex items-center justify-center gap-1.5 px-5 py-2.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-xs font-semibold shadow-xs transition-colors cursor-pointer" id="btn-restart-test" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Reiniciar Respuestas</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-low text-on-surface-variant border-t border-surface-container py-4 mt-8">
+<div class="max-w-[1340px] mx-auto px-4 md:px-6 flex flex-col sm:flex-row items-center justify-between gap-2 font-label-sm text-xs text-center sm:text-left">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary inline-block"></span>
+<span>Orientación Vocacional para el Ciclo Superior • Ciencias Sociales</span>
+</div>
+<span class="text-on-surface-variant/80">Herramienta Pedagógica Autogestionada interactiva en tiempo real</span>
+</div>
+</footer>
+<!-- Modal de Info Breve -->
+<div class="hidden fixed inset-0 z-50 bg-black/40 backdrop-blur-xs flex items-center justify-center p-4" id="modal-info">
+<div class="bg-surface-container-lowest max-w-md w-full rounded-3xl p-6 border border-surface-container shadow-2xl">
+<div class="flex items-center justify-between mb-3">
+<h3 class="font-headline-sm text-lg text-on-surface font-semibold">Sobre este Test Vocacional</h3>
+<button class="p-1 text-on-surface-variant hover:text-on-surface rounded-lg cursor-pointer" id="modal-close-btn" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<p class="font-body-md text-sm text-on-surface-variant mb-4 leading-relaxed">
+        Este test está compuesto por 12 preguntas orientativas diseñadas para reflexionar sobre tus afinidades con el área de Ciencias Sociales (Historia, Sociología, Comunicación, Ciudadanía y Filosofía).
+      </p>
+<div class="p-3 bg-surface-container-low rounded-xl text-xs text-on-surface-variant mb-4 space-y-1">
+<strong>Puntuación por respuesta:</strong><br/>
+        • <strong>A (Mucho / Sí):</strong> 2 puntos<br/>
+        • <strong>B (A veces / Quizás):</strong> 1 punto<br/>
+        • <strong>C (No demasiado / No):</strong> 0 puntos
+      </div>
+<button class="w-full py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-xs font-semibold cursor-pointer" id="modal-ok-btn" type="button">
+        Entendido
+      </button>
+</div>
+</div>
+<!-- SCRIPT CON TODA LA LÓGICA INTERACTIVA Y RENDERIZADO EN TIEMPO REAL -->
+<script>
+    (() => {
+      // Las 12 preguntas exactas con categoría y asignación a las 4 dimensiones pedidas:
+      // Dimensión 1: Sociedad e Instituciones (preguntas 1, 4, 11)
+      // Dimensión 2: Pensamiento Crítico & Medios (preguntas 6, 9, 12)
+      // Dimensión 3: Debate & Expresión Oral (preguntas 2, 8, 10)
+      // Dimensión 4: Curiosidad Histórica y Cultural (preguntas 3, 5, 7)
+      const questions = [
+        {
+          id: 1,
+          dimension: 1,
+          category: "Comportamiento humano",
+          dimLabel: "Dimensión 1: Sociedad e Instituciones",
+          text: "¿Te interesa entender por qué las personas actúan de determinada manera?"
+        },
+        {
+          id: 2,
+          dimension: 3,
+          category: "Actualidad y debate",
+          dimLabel: "Dimensión 3: Debate & Expresión Oral",
+          text: "¿Te gusta debatir sobre temas de actualidad?"
+        },
+        {
+          id: 3,
+          dimension: 4,
+          category: "Culturas del mundo",
+          dimLabel: "Dimensión 4: Curiosidad Histórica y Cultural",
+          text: "¿Te genera curiosidad conocer otras culturas y formas de vida?"
+        },
+        {
+          id: 4,
+          dimension: 1,
+          category: "Instituciones sociales",
+          dimLabel: "Dimensión 1: Sociedad e Instituciones",
+          text: "¿Te interesa conocer cómo funcionan las sociedades y sus instituciones?"
+        },
+        {
+          id: 5,
+          dimension: 4,
+          category: "Investigación",
+          dimLabel: "Dimensión 4: Curiosidad Histórica y Cultural",
+          text: "¿Disfrutás investigar temas y buscar explicaciones a problemáticas complejas?"
+        },
+        {
+          id: 6,
+          dimension: 2,
+          category: "Pensamiento crítico",
+          dimLabel: "Dimensión 2: Pensamiento Crítico & Medios",
+          text: "¿Te gusta analizar noticias y cuestionar la información que recibís a diario?"
+        },
+        {
+          id: 7,
+          dimension: 4,
+          category: "Historia y memoria",
+          dimLabel: "Dimensión 4: Curiosidad Histórica y Cultural",
+          text: "¿Te interesa conocer acontecimientos históricos y cómo influyen en el presente?"
+        },
+        {
+          id: 8,
+          dimension: 3,
+          category: "Empatía y diversidad",
+          dimLabel: "Dimensión 3: Debate & Expresión Oral",
+          text: "¿Te gusta escuchar diferentes opiniones y comprender otros puntos de vista?"
+        },
+        {
+          id: 9,
+          dimension: 2,
+          category: "Cultura y medios",
+          dimLabel: "Dimensión 2: Pensamiento Crítico & Medios",
+          text: "¿Te interesa conocer cómo influyen la cultura y los medios de comunicación en las personas?"
+        },
+        {
+          id: 10,
+          dimension: 3,
+          category: "Argumentación",
+          dimLabel: "Dimensión 3: Debate & Expresión Oral",
+          text: "¿Disfrutás expresar tus ideas, argumentar y defender tus opiniones con fundamentos?"
+        },
+        {
+          id: 11,
+          dimension: 1,
+          category: "Proyectos comunitarios",
+          dimLabel: "Dimensión 1: Sociedad e Instituciones",
+          text: "¿Te gustaría participar en proyectos que investiguen problemáticas de la sociedad?"
+        },
+        {
+          id: 12,
+          dimension: 2,
+          category: "Vínculos interpersonales",
+          dimLabel: "Dimensión 2: Pensamiento Crítico & Medios",
+          text: "¿Te gustaría comprender mejor el mundo y las relaciones entre las personas?"
+        }
+      ];
+
+      // Respuestas iniciales pre-cargadas para que los gráficos SVG se vean inmediatamente activos y demostrativos
+      // 5 opciones A (2 pts), 4 opciones B (1 pto), 3 opciones C (0 pts) = 14 pts (58% afinidad)
+      let answers = [2, 1, 1, 2, 0, 1, 2, 2, 1, 1, 0, 1];
+      let currentIndex = 0;
+
+      // Elementos del DOM
+      const quizCategoryBadge = document.getElementById("quiz-category-badge");
+      const quizCounter = document.getElementById("quiz-counter");
+      const quizPercentage = document.getElementById("quiz-percentage");
+      const progressBarFill = document.getElementById("progress-bar-fill");
+      const questionPillsContainer = document.getElementById("question-pills-container");
+      const questionText = document.getElementById("question-text");
+      const questionAxisLabel = document.getElementById("question-axis-label");
+      const livePointBadge = document.getElementById("live-point-badge");
+      const optionButtons = document.querySelectorAll(".option-btn");
+      const btnPrevQuestion = document.getElementById("btn-prev-question");
+      const btnNextQuestion = document.getElementById("btn-next-question");
+      const btnNextText = document.getElementById("btn-next-text");
+      const btnResetCurrent = document.getElementById("btn-reset-current");
+      const liveTotalScoreBadge = document.getElementById("live-total-score-badge");
+      const headerAnsweredBadge = document.getElementById("header-answered-badge");
+
+      // Elementos del Panel de Métricas
+      const gaugeMeterPath = document.getElementById("gauge-meter-path");
+      const gaugeScoreValue = document.getElementById("gauge-score-value");
+      const gaugeAffinityLabel = document.getElementById("gauge-affinity-label");
+      const gaugePercentLabel = document.getElementById("gauge-percent-label");
+      const donutSliceA = document.getElementById("donut-slice-a");
+      const donutSliceB = document.getElementById("donut-slice-b");
+      const donutSliceC = document.getElementById("donut-slice-c");
+      const donutAnsweredCount = document.getElementById("donut-answered-count");
+      const statALabel = document.getElementById("stat-a-label");
+      const statBLabel = document.getElementById("stat-b-label");
+      const statCLabel = document.getElementById("stat-c-label");
+
+      // Barras de dimensiones
+      const dimScore1 = document.getElementById("dim-score-1");
+      const dimBar1 = document.getElementById("dim-bar-1");
+      const dimScore2 = document.getElementById("dim-score-2");
+      const dimBar2 = document.getElementById("dim-bar-2");
+      const dimScore3 = document.getElementById("dim-score-3");
+      const dimBar3 = document.getElementById("dim-bar-3");
+      const dimScore4 = document.getElementById("dim-score-4");
+      const dimBar4 = document.getElementById("dim-bar-4");
+
+      // Elementos del Dictamen Final
+      const finalRadialCircle = document.getElementById("final-radial-circle");
+      const finalScoreNumber = document.getElementById("final-score-number");
+      const finalAffinityPill = document.getElementById("final-affinity-pill");
+      const finalPercentageSub = document.getElementById("final-percentage-sub");
+      const finalVerdictTitle = document.getElementById("final-verdict-title");
+      const finalVerdictDescription = document.getElementById("final-verdict-description");
+      const finalBadgesContainer = document.getElementById("final-badges-container");
+
+      // Acordeón y botones
+      const btnToggleAnswers = document.getElementById("btn-toggle-answers");
+      const detailedAnswersTable = document.getElementById("detailed-answers-table");
+      const answersToggleIcon = document.getElementById("answers-toggle-icon");
+      const answersListContainer = document.getElementById("answers-list-container");
+      const btnCopyResult = document.getElementById("btn-copy-result");
+      const copyBtnText = document.getElementById("copy-btn-text");
+      const btnRestartTest = document.getElementById("btn-restart-test");
+      const btnQuickFill = document.getElementById("btn-quick-fill");
+      const btnScrollToTest = document.getElementById("btn-scroll-to-test");
+      const btnShowFullReport = document.getElementById("btn-show-full-report");
+      const btnJumpResults = document.getElementById("btn-jump-results");
+
+      // Modal info
+      const navInfoBtn = document.getElementById("nav-info-btn");
+      const modalInfo = document.getElementById("modal-info");
+      const modalCloseBtn = document.getElementById("modal-close-btn");
+      const modalOkBtn = document.getElementById("modal-ok-btn");
+
+      // Tabs Header
+      const navTabIntro = document.getElementById("nav-tab-intro");
+      const navTabQuiz = document.getElementById("nav-tab-quiz");
+      const navTabResults = document.getElementById("nav-tab-results");
+
+      // Inicialización de pastillas de preguntas (1 a 12)
+      function initPills() {
+        questionPillsContainer.innerHTML = "";
+        questions.forEach((q, i) => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = `w-7 h-7 rounded-lg text-xs font-semibold flex items-center justify-center transition-all cursor-pointer ${
+            i === currentIndex 
+              ? "bg-primary text-on-primary ring-2 ring-primary/30" 
+              : answers[i] !== null 
+                ? "bg-primary-fixed text-on-primary-fixed" 
+                : "bg-surface-container text-on-surface-variant hover:bg-surface-container-high"
+          }`;
+          btn.textContent = q.id;
+          btn.title = `Pregunta ${q.id}: ${q.category}`;
+          btn.addEventListener("click", () => {
+            currentIndex = i;
+            renderQuestion(currentIndex);
+          });
+          questionPillsContainer.appendChild(btn);
+        });
+      }
+
+      // Cargar la pregunta actual en la UI
+      function renderQuestion(index) {
+        const q = questions[index];
+        quizCategoryBadge.textContent = q.category;
+        quizCounter.textContent = `Pregunta ${index + 1} de ${questions.length}`;
+        questionText.textContent = q.text;
+        questionAxisLabel.textContent = q.dimLabel;
+
+        const answeredCount = answers.filter(a => a !== null).length;
+        const progressPct = Math.round((answeredCount / questions.length) * 100);
+        quizPercentage.textContent = `${progressPct}% completado`;
+        progressBarFill.style.width = `${progressPct}%`;
+        headerAnsweredBadge.textContent = `${answeredCount} / 12 Respondidas`;
+
+        btnPrevQuestion.disabled = (index === 0);
+        btnNextText.textContent = (index === questions.length - 1) ? "Ver Dictamen" : "Siguiente";
+
+        const currentVal = answers[index];
+        if (currentVal === 2) {
+          livePointBadge.textContent = "Puntaje actual: +2 (A: Mucho)";
+          livePointBadge.className = "px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-mono text-[11px] font-semibold";
+        } else if (currentVal === 1) {
+          livePointBadge.textContent = "Puntaje actual: +1 (B: A veces)";
+          livePointBadge.className = "px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-mono text-[11px] font-semibold";
+        } else if (currentVal === 0) {
+          livePointBadge.textContent = "Puntaje actual: 0 (C: No)";
+          livePointBadge.className = "px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-mono text-[11px]";
+        } else {
+          livePointBadge.textContent = "Sin responder aún";
+          livePointBadge.className = "px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-mono text-[11px]";
+        }
+
+        // Estilos de los botones de opción A, B, C
+        optionButtons.forEach(btn => {
+          const val = parseInt(btn.getAttribute("data-val"), 10);
+          const indicator = btn.querySelector(".option-indicator");
+          const checkIcon = btn.querySelector(".option-check");
+
+          if (currentVal === val) {
+            btn.classList.add("bg-secondary-fixed/50", "border-primary/50", "shadow-xs");
+            btn.classList.remove("bg-surface-container-low", "border-transparent");
+            indicator.classList.add("bg-primary", "text-on-primary");
+            indicator.classList.remove("bg-surface-container-highest", "text-on-surface-variant");
+            checkIcon.classList.remove("opacity-0");
+          } else {
+            btn.classList.remove("bg-secondary-fixed/50", "border-primary/50", "shadow-xs");
+            btn.classList.add("bg-surface-container-low", "border-transparent");
+            indicator.classList.remove("bg-primary", "text-on-primary");
+            indicator.classList.add("bg-surface-container-highest", "text-on-surface-variant");
+            checkIcon.classList.add("opacity-0");
+          }
+        });
+
+        initPills();
+        updateAllMetrics();
+      }
+
+      // Actualizar en tiempo real todos los gráficos SVG, velocímetro, donut, barras y dictamen
+      function updateAllMetrics() {
+        const totalScore = answers.reduce((acc, curr) => acc + (curr !== null ? curr : 0), 0);
+        const answeredCount = answers.filter(a => a !== null).length;
+        const totalPct = Math.round((totalScore / 24) * 100);
+
+        liveTotalScoreBadge.textContent = `${totalScore} / 24 pts`;
+
+        // 1. Velocímetro Semicircular SVG
+        // Longitud del arco semicircular r=40 es PI * 40 = 125.66
+        const semiCircumference = 125.66;
+        const gaugeOffset = (totalScore / 24) * semiCircumference;
+        gaugeMeterPath.setAttribute("stroke-dasharray", `${gaugeOffset} ${251.32}`);
+        gaugeScoreValue.innerHTML = `${totalScore} <span class="text-xs font-normal text-on-surface-variant">/ 24</span>`;
+        gaugePercentLabel.textContent = `${totalPct}% afinidad`;
+
+        if (totalScore >= 18) {
+          gaugeAffinityLabel.textContent = "Afinidad Alta";
+          gaugeAffinityLabel.className = "text-[11px] font-semibold text-primary";
+          gaugeMeterPath.setAttribute("stroke", "#446155");
+        } else if (totalScore >= 10) {
+          gaugeAffinityLabel.textContent = "Afinidad Moderada";
+          gaugeAffinityLabel.className = "text-[11px] font-semibold text-secondary";
+          gaugeMeterPath.setAttribute("stroke", "#4a6174");
+        } else {
+          gaugeAffinityLabel.textContent = "Afinidad Exploratoria";
+          gaugeAffinityLabel.className = "text-[11px] font-semibold text-tertiary";
+          gaugeMeterPath.setAttribute("stroke", "#8b4830");
+        }
+
+        // 2. Gráfico Donut de Distribución (Mucho, A veces, No)
+        const countA = answers.filter(v => v === 2).length;
+        const countB = answers.filter(v => v === 1).length;
+        const countC = answers.filter(v => v === 0).length;
+        const validTotal = Math.max(answeredCount, 1);
+
+        const pctA = Math.round((countA / validTotal) * 100);
+        const pctB = Math.round((countB / validTotal) * 100);
+        const pctC = Math.round((countC / validTotal) * 100);
+
+        donutAnsweredCount.textContent = answeredCount;
+        statALabel.textContent = `${countA} (${pctA}%)`;
+        statBLabel.textContent = `${countB} (${pctB}%)`;
+        statCLabel.textContent = `${countC} (${pctC}%)`;
+
+        // Circunferencia completa r=40 es 2 * PI * 40 = 251.327
+        const donutCircumference = 251.327;
+        const lenA = (countA / validTotal) * donutCircumference;
+        const lenB = (countB / validTotal) * donutCircumference;
+        const lenC = (countC / validTotal) * donutCircumference;
+
+        donutSliceA.setAttribute("stroke-dasharray", `${lenA} ${donutCircumference - lenA}`);
+        donutSliceA.setAttribute("stroke-dashoffset", "0");
+
+        donutSliceB.setAttribute("stroke-dasharray", `${lenB} ${donutCircumference - lenB}`);
+        donutSliceB.setAttribute("stroke-dashoffset", `-${lenA}`);
+
+        donutSliceC.setAttribute("stroke-dasharray", `${lenC} ${donutCircumference - lenC}`);
+        donutSliceC.setAttribute("stroke-dashoffset", `-${lenA + lenB}`);
+
+        // 3. Gráfico de las 4 Dimensiones Temáticas
+        // Dim 1: preguntas 1, 4, 11 (índices 0, 3, 10) -> Max 6 pts
+        const scoreDim1 = (answers[0] || 0) + (answers[3] || 0) + (answers[10] || 0);
+        const pctDim1 = Math.round((scoreDim1 / 6) * 100);
+        dimScore1.textContent = `${pctDim1}% (${scoreDim1}/6 pts)`;
+        dimBar1.style.width = `${pctDim1}%`;
+
+        // Dim 2: preguntas 6, 9, 12 (índices 5, 8, 11) -> Max 6 pts
+        const scoreDim2 = (answers[5] || 0) + (answers[8] || 0) + (answers[11] || 0);
+        const pctDim2 = Math.round((scoreDim2 / 6) * 100);
+        dimScore2.textContent = `${pctDim2}% (${scoreDim2}/6 pts)`;
+        dimBar2.style.width = `${pctDim2}%`;
+
+        // Dim 3: preguntas 2, 8, 10 (índices 1, 7, 9) -> Max 6 pts
+        const scoreDim3 = (answers[1] || 0) + (answers[7] || 0) + (answers[9] || 0);
+        const pctDim3 = Math.round((scoreDim3 / 6) * 100);
+        dimScore3.textContent = `${pctDim3}% (${scoreDim3}/6 pts)`;
+        dimBar3.style.width = `${pctDim3}%`;
+
+        // Dim 4: preguntas 3, 5, 7 (índices 2, 4, 6) -> Max 6 pts
+        const scoreDim4 = (answers[2] || 0) + (answers[4] || 0) + (answers[6] || 0);
+        const pctDim4 = Math.round((scoreDim4 / 6) * 100);
+        dimScore4.textContent = `${pctDim4}% (${scoreDim4}/6 pts)`;
+        dimBar4.style.width = `${pctDim4}%`;
+
+        // 4. Panel Final de Dictamen
+        finalScoreNumber.textContent = totalScore;
+        finalPercentageSub.textContent = `Equivalente al ${totalPct}% de coincidencia con el plan de estudios de Sociales.`;
+
+        // Circunferencia del círculo final r=50 es 314.159
+        const circleCircumference = 314.159;
+        const finalOffset = circleCircumference - (totalPct / 100) * circleCircumference;
+        finalRadialCircle.style.strokeDashoffset = finalOffset;
+
+        // Veredicto exacto por rangos requeridos
+        if (totalScore >= 18) {
+          finalVerdictTitle.textContent = "¡Sociales podría ser para vos!";
+          finalVerdictDescription.textContent = "Tus respuestas reflejan una sintonía profunda con las temáticas y métodos de las Ciencias Sociales. Mostrás una curiosidad espontánea y sostenida por el análisis histórico, el funcionamiento de las instituciones, el debate de actualidad y las causas de los fenómenos humanos.";
+          finalAffinityPill.textContent = "¡Sociales podría ser para vos! (Afinidad Alta)";
+          finalAffinityPill.className = "mt-1 px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-sm font-semibold shadow-xs";
+          finalRadialCircle.setAttribute("class", "stroke-primary transition-all duration-1000 ease-out");
+          renderBadges(["Pensamiento crítico avanzado", "Comprensión histórica", "Oratoria y debate", "Compromiso comunitario", "Curiosidad sociológica"]);
+        } else if (totalScore >= 10) {
+          finalVerdictTitle.textContent = "¡Quizás Sociales sea una buena opción!";
+          finalVerdictDescription.textContent = "Tus respuestas muestran interés en las dinámicas humanas y la vida comunitaria, combinadas con curiosidad por otras disciplinas. Es una base muy positiva para explorar tanto las Ciencias Sociales como orientaciones afines, evaluando materias específicas del ciclo superior.";
+          finalAffinityPill.textContent = "¡Quizás Sociales sea una buena opción! (Afinidad Moderada)";
+          finalAffinityPill.className = "mt-1 px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-sm font-semibold shadow-xs";
+          finalRadialCircle.setAttribute("class", "stroke-secondary transition-all duration-1000 ease-out");
+          renderBadges(["Visión interdisciplinaria", "Apertura a nuevas ideas", "Interés ciudadano", "Pensamiento reflexivo"]);
+        } else {
+          finalVerdictTitle.textContent = "Quizás otra orientación se adapte mejor a vos";
+          finalVerdictDescription.textContent = "Tus preferencias actuales muestran menor inclinación hacia las lecturas sociales e históricas. Podrías encontrar mayor afinidad en orientaciones con enfoque práctico, contable o cuantitativo, como Economía y Administración, o áreas científicas y tecnológicas.";
+          finalAffinityPill.textContent = "Quizás otra orientación se adapte mejor (Explorar Economía)";
+          finalAffinityPill.className = "mt-1 px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-sm font-semibold shadow-xs";
+          finalRadialCircle.setAttribute("class", "stroke-tertiary transition-all duration-1000 ease-out");
+          renderBadges(["Pensamiento pragmático", "Enfoque estructurado / cuantitativo", "Interés en gestión aplicada"]);
+        }
+
+        renderAnswersList();
+      }
+
+      function renderBadges(list) {
+        finalBadgesContainer.innerHTML = "";
+        list.forEach(badge => {
+          const span = document.createElement("span");
+          span.className = "inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container font-label-sm text-xs font-semibold text-on-surface";
+          span.innerHTML = `<span class="material-symbols-outlined text-[15px] text-primary">done</span>${badge}`;
+          finalBadgesContainer.appendChild(span);
+        });
+      }
+
+      function renderAnswersList() {
+        answersListContainer.innerHTML = "";
+        questions.forEach((q, idx) => {
+          const ansVal = answers[idx];
+          let ansText = "Sin responder";
+          let badgeClass = "bg-surface-container text-on-surface-variant";
+          
+          if (ansVal === 2) {
+            ansText = "A. Mucho (+2)";
+            badgeClass = "bg-primary-fixed text-on-primary-fixed-variant font-bold";
+          } else if (ansVal === 1) {
+            ansText = "B. A veces (+1)";
+            badgeClass = "bg-secondary-container text-on-secondary-container font-bold";
+          } else if (ansVal === 0) {
+            ansText = "C. No (0)";
+            badgeClass = "bg-surface-container-high text-on-surface-variant";
+          }
+
+          const div = document.createElement("div");
+          div.className = "p-2.5 rounded-xl bg-surface-container-low flex flex-col justify-between gap-1 border border-surface-container hover:border-primary/40 cursor-pointer transition-all";
+          div.title = "Hacé clic para saltar a esta pregunta";
+          div.innerHTML = `
+            <div class="flex items-start justify-between gap-2">
+              <span class="font-medium text-on-surface">#${q.id}. ${q.text}</span>
+            </div>
+            <div class="flex items-center justify-between mt-1 pt-1 border-t border-surface-container/60">
+              <span class="text-[11px] text-on-surface-variant">${q.category}</span>
+              <span class="px-2 py-0.5 rounded text-[11px] ${badgeClass}">${ansText}</span>
+            </div>
+          `;
+          div.addEventListener("click", () => {
+            currentIndex = idx;
+            renderQuestion(currentIndex);
+            document.getElementById("section-quiz-card").scrollIntoView({ behavior: "smooth" });
+          });
+          answersListContainer.appendChild(div);
+        });
+      }
+
+      // Eventos de selección de respuesta
+      optionButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const val = parseInt(btn.getAttribute("data-val"), 10);
+          answers[currentIndex] = val;
+          renderQuestion(currentIndex);
+
+          // Micro avance amigable a la siguiente pregunta
+          setTimeout(() => {
+            if (currentIndex < questions.length - 1) {
+              currentIndex++;
+              renderQuestion(currentIndex);
+            }
+          }, 220);
+        });
+      });
+
+      // Navegación anterior y siguiente
+      btnPrevQuestion.addEventListener("click", () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+          renderQuestion(currentIndex);
+        }
+      });
+
+      btnNextQuestion.addEventListener("click", () => {
+        if (currentIndex < questions.length - 1) {
+          currentIndex++;
+          renderQuestion(currentIndex);
+        } else {
+          document.getElementById("section-final-report").scrollIntoView({ behavior: "smooth" });
+        }
+      });
+
+      // Desmarcar pregunta actual
+      btnResetCurrent.addEventListener("click", () => {
+        answers[currentIndex] = null;
+        renderQuestion(currentIndex);
+      });
+
+      // Acordeón de respuestas detalladas
+      btnToggleAnswers.addEventListener("click", () => {
+        const isHidden = detailedAnswersTable.classList.contains("hidden");
+        if (isHidden) {
+          detailedAnswersTable.classList.remove("hidden");
+          answersToggleIcon.textContent = "expand_less";
+        } else {
+          detailedAnswersTable.classList.add("hidden");
+          answersToggleIcon.textContent = "expand_more";
+        }
+      });
+
+      // Scroll interactivo a secciones
+      btnScrollToTest.addEventListener("click", () => {
+        document.getElementById("section-quiz-card").scrollIntoView({ behavior: "smooth" });
+      });
+
+      btnShowFullReport.addEventListener("click", () => {
+        document.getElementById("section-final-report").scrollIntoView({ behavior: "smooth" });
+      });
+
+      btnJumpResults.addEventListener("click", () => {
+        document.getElementById("section-final-report").scrollIntoView({ behavior: "smooth" });
+      });
+
+      // Navegación Tabs Header
+      navTabIntro.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+      navTabQuiz.addEventListener("click", () => {
+        document.getElementById("section-quiz-card").scrollIntoView({ behavior: "smooth" });
+      });
+      navTabResults.addEventListener("click", () => {
+        document.getElementById("section-final-report").scrollIntoView({ behavior: "smooth" });
+      });
+
+      // Cargar Ejemplo de Alumno rápido
+      btnQuickFill.addEventListener("click", () => {
+        // Carga un perfil balanceado con inclinación a sociales
+        answers = [2, 2, 1, 2, 2, 1, 2, 2, 1, 2, 1, 2]; // 20 pts (Alta afinidad)
+        currentIndex = 0;
+        renderQuestion(0);
+        updateAllMetrics();
+      });
+
+      // Reiniciar Test
+      btnRestartTest.addEventListener("click", () => {
+        answers = new Array(12).fill(null);
+        currentIndex = 0;
+        renderQuestion(0);
+        document.getElementById("section-quiz-card").scrollIntoView({ behavior: "smooth" });
+      });
+
+      // Copiar Síntesis
+      btnCopyResult.addEventListener("click", () => {
+        const total = answers.reduce((a, b) => a + (b || 0), 0);
+        const text = `Test Vocacional • Ciencias Sociales\n` +
+          `Puntaje Obtenido: ${total} / 24 puntos\n` +
+          `Dictamen: ${finalVerdictTitle.textContent}\n` +
+          `Distribución: ${answers.filter(v => v===2).length} Mucho (A), ${answers.filter(v => v===1).length} A veces (B), ${answers.filter(v => v===0).length} No (C).\n\n` +
+          `Recordatorio pedagógico:\n«Este test es orientativo y no determina tu futuro. Elegir una orientación es una decisión personal. Lo importante es descubrir qué te interesa, qué te apasiona y qué querés aprender.»`;
+
+        navigator.clipboard.writeText(text).then(() => {
+          copyBtnText.textContent = "¡Copiado!";
+          setTimeout(() => { copyBtnText.textContent = "Copiar Síntesis"; }, 2000);
+        });
+      });
+
+      // Manejo de Modal de Ayuda
+      navInfoBtn.addEventListener("click", () => modalInfo.classList.remove("hidden"));
+      modalCloseBtn.addEventListener("click", () => modalInfo.classList.add("hidden"));
+      modalOkBtn.addEventListener("click", () => modalInfo.classList.add("hidden"));
+      modalInfo.addEventListener("click", (e) => {
+        if (e.target === modalInfo) modalInfo.classList.add("hidden");
+      });
+
+      // Inicialización inicial
+      renderQuestion(0);
+    })();
+  </script>
+</body></html>
